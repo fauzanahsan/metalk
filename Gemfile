@@ -7,7 +7,6 @@ gem 'rails'
 
 # gem 'mysql2'
 gem 'sqlite3', :group => :development
-gem 'pg', :group => :production
 
 # Use jQuery-Rails
 gem 'jquery-rails'
@@ -39,3 +38,9 @@ gem 'jquery-rails'
 gem 'pusher'
 
 gem 'rails_autolink'
+
+group :production do
+  gem 'pg'
+  gem 'uglifier'
+  gem 'therubyracer'
+end
