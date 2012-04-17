@@ -6,7 +6,8 @@ gem 'rails'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'mysql2'
-gem 'sqlite3'
+gem 'sqlite3', :group => :development
+gem 'pg', :group => :production
 
 # Use jQuery-Rails
 gem 'jquery-rails'

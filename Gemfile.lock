@@ -45,6 +45,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    pg (0.13.2)
     polyglot (0.3.3)
     pusher (0.8.4)
       crack (~> 0.1.0)
@@ -100,6 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   jquery-rails
+  pg
   pusher
   rails
   rails_autolink
