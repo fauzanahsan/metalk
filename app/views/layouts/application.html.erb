@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Metalk</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>MeTalk Chat</title>
+  <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <script type="text/javascript" charset="utf-8">
+    var PUSHER_KEY = '<%= Pusher.key %>'
+  </script>
 </head>
 <body>
 
 <%= yield %>
+
+<footer>
+  <p>Copyright &copy; RamboTechnology</p>
+</footer>
 
 </body>
 </html>

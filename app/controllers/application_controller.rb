@@ -1,3 +1,5 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
+
+  before_filter { response.headers['P3P'] = %q|CP="HONK"| }
+
 end
